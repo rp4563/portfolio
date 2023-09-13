@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik Singh Pundhir Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background: rgb(6, 2, 82);
+            background: linear-gradient(90deg, rgba(6, 2, 82, 1) 0%, rgba(21, 190, 203, 1) 29%, rgba(33, 152, 121, 0.9276960784313726) 55%, rgba(32, 192, 225, 1) 100%);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+
+            width: 100%;
+        }
+
+        .rightsection {
+            position: relative;
+        }
+
+        .moving-image {
+            position: absolute;
+            animation: moveUpDown 1.2s infinite alternate;
+            /* Adjust the duration and animation type as needed */
+        }
+
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+                /* Adjust the distance you want the image to move */
+            }
+
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ritik's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is Ritik Singh Pundhir
+                <div>and I am a Web Developer</div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="" class="moving-image">
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
